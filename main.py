@@ -14,7 +14,6 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# Reemplaza estos con tus claves
 load_dotenv()
 TELEGRAM_API_KEY = os.getenv("TELEGRAM_API_KEY")
 COINMARKETCAP_API_KEY = os.getenv("COINMARKETCAP_API_KEY")

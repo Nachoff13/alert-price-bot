@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Nacho\Desktop\Bot Telegram\mybotenv
+set VIRTUAL_ENV=C:\Users\Nacho\Desktop\Bot Telegram\alert-price-bot\mybotenv
 
 if not defined PROMPT set PROMPT=$P$G
 

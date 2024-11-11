@@ -1,6 +1,8 @@
 import logging
 import requests
 import time
+import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
@@ -13,8 +15,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Reemplaza estos con tus claves
-TELEGRAM_TOKEN = 'TU_TOKEN_DE_TELEGRAM'
-COINMARKETCAP_API_KEY = 'TU_API_KEY_DE_COINMARKETCAP'
+load_dotenv()
+TELEGRAM_API_KEY = os.getenv("TELEGRAM_API_KEY")
+COINMARKETCAP_API_KEY = os.getenv("COINMARKETCAP_API_KEY")
 
 # Diccionario para almacenar los objetivos de precio de los usuarios
 user_targets = {}
